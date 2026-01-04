@@ -92,7 +92,9 @@ def main(argv):
     engine.rootContext().setContextProperty('backend', backend)
 
     # Charger le QML (chemin absolu)
-    qml_file = os.path.join(os.path.dirname(__file__), 'main.qml')
+    # qml_file = os.path.join(os.path.dirname(__file__), 'main.qml')
+    # qml_file = os.path.join(os.path.dirname(__file__), 'main_Full_DeepSeek_V1.qml')
+    qml_file = os.path.join(os.path.dirname(__file__), 'main_Full_DeepSeek_V2_TabBar.qml')
     engine.load(QUrl.fromLocalFile(qml_file))
 
     if not engine.rootObjects():

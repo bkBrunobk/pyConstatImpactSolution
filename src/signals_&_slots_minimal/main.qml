@@ -63,7 +63,7 @@ ApplicationWindow {
             spacing: 4
 
             Text {
-                text: qsTr("Saisir votre constat (max 500 chars) :")
+                text: qsTr("Saisir votre constat (max 500 caractères) :")
                 font.pixelSize: 11
                 color: "#666666"
             }
@@ -94,7 +94,7 @@ ApplicationWindow {
                 anchors.right: parent.right
             }
         }
-
+/*
         // Boutons tests
         Row {
             spacing: 8
@@ -199,7 +199,9 @@ ApplicationWindow {
             // Validation défensive du paramètre
             var m = (typeof msg !== 'undefined' && msg !== null) ? String(msg) : qsTr("(sans contenu)")
             response.text = m
-            // Feedback auditif optionnel : console.log("[QML] Signal reçu :", m)
+            // Feedback auditif optionnel : 
+            console.log("[QML] Signal reçu :", m)
         }
+*/        
     }
 }
